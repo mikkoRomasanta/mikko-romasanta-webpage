@@ -1,0 +1,79 @@
+body{
+    background-image: url(../images/kb-bg.jpg);
+    background-color: rgba(0, 194, 162, 0.6);
+    background-blend-mode: screen;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+}
+
+/* body > #bg{
+    height: 100%;
+    width: 100%;
+    background-color:#292b2c;
+    clip-path: polygon(100% 92%, 100% 0, 100% 100%, 0% 100%);
+    position: absolute;
+    z-index: -1;
+} */
+
+.content{
+    padding-top: 3em;
+    padding-left: 5em;
+    padding-right: 5em;
+    text-align: center;
+}
+
+#name{
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+/* FOOTER START */
+.footer{
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+    position: fixed;
+    height: 2.5em;
+    bottom: 0;
+    width: 100%;
+    text-align:end;
+    color: white;
+    padding-right: 1em;
+    padding-bottom: 1.75em;
+}
+
+.footer > a > .footer-item{
+    padding-top: .5em;
+    font-size: 1.25em;
+}
+
+.footer > a{
+    color:rgb(190, 190, 190);
+}
+.footer > a:hover{
+    color: rgba(0, 194, 162, 0.6);
+}
+/* FOOTER END */
+
+#avatar{
+    border-radius: 50%;
+}
+
+.navbar{
+    padding-top: 0;
+    margin-top: -1em;
+}
+
+.content > .navbar-light .navbar-nav .nav-link {
+    color: rgb(44, 44, 44);
+}
+.content > .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+#paragraph{
+    background-color: rgb(255, 255, 255, 0.21); 
+}
+
+#skills, #misc{
+    text-align: left;
+}
+
