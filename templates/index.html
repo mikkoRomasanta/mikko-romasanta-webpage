@@ -6,39 +6,19 @@
 
 {% endblock %}
 
-{% block styles %}
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-
-{% endblock %}
-
 {% block content %}
 
     <div class="container">
         <div class="content">
-            <p id="name";">MIKKO ROMASANTA</p>
+            <p class="title"";">MIKKO ROMASANTA</p>
             <!-- <div id="paragraph">< -->
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque id nibh tortor id aliquet. Arcu vitae elementum curabitur vitae nunc sed velit dignissim. Ac placerat vestibulum lectus mauris.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non sodales neque sodales ut etiam sit amet nisl. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Semper viverra nam libero justo. Ac turpis egestas maecenas pharetra convallis. Facilisis leo vel fringilla est ullamcorper eget nulla.</p>
                 <br>
             <!-- </div> -->
             <img src="{{url_for('static',filename='images/xofgif.gif')}}" alt="avatar" id="avatar" height="100px">
-            
             <hr>
-
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-item nav-link" href="/">Home</a>
-                    <a class="nav-item nav-link" href="{{url_for('skills')}}">Skills</a>
-                    <a class="nav-item nav-link" href="#">Projects</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
-                </div>
-            </nav>
         </div>
-
-        
     </div>
 
 {% endblock %}

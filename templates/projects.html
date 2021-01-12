@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    Mikko Romasanta's Projects
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="content">
+            <img src="{{url_for('static',filename='images/xofgif.gif')}}" alt="avatar" id="avatar" height="100px">
+            <br>
+            <p class="title">PROJECTS</p>
+            <h2>United Match Bot</h2>
+            <div class="row" id="project">
+                <div class="col-sm-3 border-end">
+                    <a href="https://github.com/mikkoRomasanta/united-match-bot-public" target="_blank"><img src="{{url_for('static',filename='images/united match bot.png')}}" alt="discord bot" class="project-image"></a>
+                </div>
+                <div class="col-sm-8 project-desc">
+                    <ul>
+                        <li>This is a personal project for our discord server. </li>
+                        <li> The main purpose of the bot is to inform us of
+                            upcoming Manchester United games.</li>
+                        <li>It is written in Python3.8 and hosted on a free AWS server.</li>
+                        <li>I have added a <span style="font-weight: bold;">prediction mini-game</span> that awards points based on correct match result predictions.</li>
+                        <li>This is the 1st Python project that I made and I plan to improve/rewrite it before the next football season starts</li>
+                    </ul>
+                </div>
+            </div>     
+
+            <!-- hidden -->
+            <div class="row hidden" id="project-more-info-1">
+                <div class="col-sm-3 border-end">
+                    <img src="{{url_for('static',filename='images/test1.png')}}" alt="discord bot" class="project-image">
+                </div>
+                <div class="col-sm-8 project-desc">
+                    <img src="{{url_for('static',filename='images/test2.png')}}" alt="discord bot" class="project-desc-image">
+                </div>
+            </div>
+            <!-- hidden -->
+
+            <div class="more_info">
+                <button class="btn btn-sm btn-outline-light" id="more-info-btn" onclick="showOrHide()">more info</button>
+            </div>
+
+            <hr>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        function showOrHide() {
+            var x = document.getElementById("project-more-info-1");
+            if (x.classList.contains("hidden")){
+                x.classList.remove("hidden");
+             } else {
+                x.classList.add("hidden");
+             }
+
+          }
+    </script>
+{% endblock %}
+
+{% block footer %}
+
+    <div class="footer">
+        
+        <a href="https://github.com/mikkoRomasanta" target="_blank"><i class="fab fa-github footer-item"></i></a>
+        <a href="https://www.linkedin.com/in/mikkoRomasanta" target="_blank"><i class="fab fa-linkedin footer-item"></i></a>
+        <!-- <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f footer-item"></i></a> -->
+    </div>
+
+{% endblock %}
