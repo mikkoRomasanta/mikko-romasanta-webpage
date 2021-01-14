@@ -1,3 +1,25 @@
+@media (max-width: 600px) {
+    body {
+      font-size: 1em !important;
+    }
+    .title{
+        font-size: 2em !important;
+    }
+    .nav-link{
+        padding-right: .5em !important;
+    }
+    .navbar .ms-auto{
+        flex-direction: row !important;
+        margin-left: 0 !important;
+    }
+    #skills, #misc{
+        text-align: center !important;
+    }
+    #skills > ul, #misc > ul{
+        list-style-position: inside !important;
+    }
+}
+
 body{
     background-image: url(../images/kb-bg.jpg);
     background-color: rgba(0, 194, 162, 0.6);
@@ -5,16 +27,6 @@ body{
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
 }
-
-/* body > #bg{
-    height: 100%;
-    width: 100%;
-    background-color:#292b2c;
-    clip-path: polygon(100% 92%, 100% 0, 100% 100%, 0% 100%);
-    position: absolute;
-    z-index: -1;
-} */
-
 
 .title{
     font-size: 3.5em;
@@ -50,16 +62,17 @@ body{
 
 #avatar{
     border-radius: 50%;
+    padding-top: .3em;
 }
 
 .navbar{
     padding-top: 0;
-    margin-top: -4em;
+    margin-top: -3em;
 }
 
 /* CONTENT START */
 .content{
-    padding-top: 3em;
+    padding-top: 2em;
     padding-left: 5em;
     padding-right: 5em;
     text-align: center;

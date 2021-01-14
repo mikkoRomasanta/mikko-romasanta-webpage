@@ -16,16 +16,16 @@
             <h2>United Match Bot</h2>
             <div class="row" id="project">
                 <div class="col-sm-3 border-end">
-                    <a href="https://github.com/mikkoRomasanta/united-match-bot-public" target="_blank"><img src="{{url_for('static',filename='images/united match bot.png')}}" alt="discord bot" class="project-image"></a>
+                    <a href="https://github.com/mikkoRomasanta/united-match-bot-public" target="_blank"><img src="{{url_for('static',filename='images/united match bot.png')}}" alt="discord bot" class="project-image"  title="click for github page"></a>
                 </div>
                 <div class="col-sm-8 project-desc">
                     <ul>
                         <li>This is a personal project for our discord server. </li>
-                        <li> The main purpose of the bot is to inform us of
-                            upcoming Manchester United games.</li>
-                        <li>It is written in Python3.8 and hosted on a free AWS server.</li>
-                        <li>I have added a <span style="font-weight: bold;">prediction mini-game</span> that awards points based on correct match result predictions.</li>
                         <li>This is the 1st Python project that I made and I plan to improve/rewrite it before the next football season starts</li>
+                        <li> The main purpose of the bot is to inform us of
+                            upcoming Manchester United games. It uses Google Calendar API to get the match schedule</li>
+                        <li>It is written in Python3.8 and hosted on a free <span class="fw-bold">AWS server.</span></li>
+                        <li>I have added a <span class="fw-bold">prediction mini-game</span> that awards points based on correct match result predictions.</li>
                     </ul>
                 </div>
             </div>     
@@ -33,15 +33,15 @@
             <!-- hidden -->
             <div class="row hidden" id="project-more-info-1">
                 <div class="col-sm-3 border-end">
-                    <img src="{{url_for('static',filename='images/utd-command.png')}}" alt="discord bot" class="project-image">
+                    <img src="{{url_for('static',filename='images/utd-command.png')}}" alt="discord bot !chelp command" class="project-image">
                 </div>
                 <div class="col-sm-8 project-desc">
-                    <img src="{{url_for('static',filename='images/utd-command-result.png')}}" alt="discord bot" class="project-desc-image">
+                    <img src="{{url_for('static',filename='images/utd-command-result.png')}}" alt="discord bot !chelp command result" class="project-desc-image">
                 </div>
             </div>
             <!-- hidden -->
 
-            <div class="more_info">
+            <div class="more_info" style="padding-top: .3em;">
                 <button class="btn btn-sm btn-outline-light" id="more-info-btn" onclick="showOrHide()">more info</button>
             </div>
 
@@ -55,10 +55,13 @@
     <script>
         function showOrHide() {
             var x = document.getElementById("project-more-info-1");
+            var btn = document.getElementById("more-info-btn");
             if (x.classList.contains("hidden")){
                 x.classList.remove("hidden");
+                btn.innerHTML = 'hide info';
              } else {
                 x.classList.add("hidden");
+                btn.innerHTML = 'more info';
              }
 
           }
