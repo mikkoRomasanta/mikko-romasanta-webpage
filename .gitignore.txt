@@ -1,0 +1,3 @@
+Procfile
+virtual/*
+_pycache__/*
