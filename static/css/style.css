@@ -18,6 +18,13 @@
     #skills > ul, #misc > ul{
         list-style-position: inside !important;
     }
+    .content{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    #misc > h2{
+        font-size: 1.2em !important;
+    }
 }
 
 body{
